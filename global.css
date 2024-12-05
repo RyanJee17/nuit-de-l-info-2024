@@ -1,3 +1,71 @@
+.changa-one-regular {
+    font-family: "Changa One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.changa-one-regular-italic {
+    font-family: "Changa One", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.play-regular {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.play-bold {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 body {
     background-color: rgba(88, 220, 187, 1);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blue-wave {
+    width: 100%;
+}
+
+header {
+    position: relative;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -75%);
+    z-index: 1;
+    display: flex;
+    width: 100%;
+}
+
+.header-logos {
+    display: flex;
+    gap: 18px;
+    width: 50%;
+    margin-left: 4%;
+    align-items: center;
+}
+
+.x-logos {
+    font-size: 30px;
+}
+
+.navbar {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.navbar > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
