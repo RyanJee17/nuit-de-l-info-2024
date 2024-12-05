@@ -40,10 +40,11 @@ header {
 .header-content {
     position: absolute;
     top: 50%;
-    transform: translate(0, -75%);
+    transform: translate(0, -80%);
     z-index: 1;
     display: flex;
     width: 100%;
+    align-items: center;
 }
 
 .header-logos {
@@ -61,11 +62,17 @@ header {
 .navbar {
     display: flex;
     width: 50%;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 75px;
+    font-size: 20px;
+    position: relative;
 }
 
 .navbar > a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
 }
