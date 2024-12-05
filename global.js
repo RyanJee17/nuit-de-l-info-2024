@@ -2,9 +2,11 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+let img = document.createElement('img');
+
 function show_image() {
-    var img = document.getElementById("picture");
-    var division = Math.random() * 5;
+    img.src = "src/assets/img/chat.jpg";
+    img.alt = "";
     img.width = img.width;
     img.height = img.height;
 
@@ -14,40 +16,42 @@ function show_image() {
 
     // set the position
     img.style.position = 'absolute';
-    img.style.marginTop = (document.body.clientHeight/2) * Math.random() + 'px';
-    img.style.marginLeft = (document.body.clientWidth/2) * Math.random() + 'px';
+    img.style.zIndex = 1;
+    img.style.transform = 'translate(0,-100%)'
+    img.style.marginTop = (document.body.clientHeight / 2) * Math.random() + 'px';
+    img.style.marginLeft = (document.body.clientWidth / 2) * Math.random() + 'px';
 
     document.body.appendChild(img);
 }
 
 function rotateAnimation(degrees) {
-    var elem = document.getElementById("picture");
     if (navigator.userAgent.match("Chrome")) {
-        elem.style.WebkitTransform = "rotate(" + degrees + "deg)";
+        img.style.WebkitTransform = "rotate(" + degrees + "deg)";
     } else if (navigator.userAgent.match("Firefox")) {
-        elem.style.MozTransform = "rotate(" + degrees + "deg)";
+        img.style.MozTransform = "rotate(" + degrees + "deg)";
     } else if (navigator.userAgent.match("MSIE")) {
-        elem.style.msTransform = "rotate(" + degrees + "deg)";
+        img.style.msTransform = "rotate(" + degrees + "deg)";
     } else if (navigator.userAgent.match("Opera")) {
-        elem.style.OTransform = "rotate(" + degrees + "deg)";
+        img.style.OTransform = "rotate(" + degrees + "deg)";
     } else {
-        elem.style.transform = "rotate(" + degrees + "deg)";
+        img.style.transform = "rotate(" + degrees + "deg)";
     }
 }
 
 show_image();
 
-document.getElementById('picture').addEventListener('click', async () => {
+/*
+img.addEventListener('click', async () => {
     var degrees = 1;
     while (degrees != 0) {
         setTimeout(rotateAnimation(degrees), 5000);
         degrees++;
         await sleep(5)
-        if (degrees == 361){
+        if (degrees == 361) {
             degrees = 0;
         }
     }
 
-});
+})*/
 
 
