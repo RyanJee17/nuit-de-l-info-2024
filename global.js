@@ -14,8 +14,8 @@ function show_image() {
 
     // set the position
     img.style.position = 'absolute';
-    img.style.top = document.body.clientHeight * Math.random() + 'px';
-    img.style.left = document.body.clientWidth * Math.random() + 'px';
+    img.style.marginTop = (document.body.clientHeight/2) * Math.random() + 'px';
+    img.style.marginLeft = (document.body.clientWidth/2) * Math.random() + 'px';
 
     document.body.appendChild(img);
 }
