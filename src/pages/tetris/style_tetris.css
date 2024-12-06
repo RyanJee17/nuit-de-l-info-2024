@@ -1,4 +1,4 @@
-.grille{
+.grille {
     width: 200px;
     height: 400px;
     display: flex;
@@ -6,17 +6,17 @@
     background-color: #292412;
 }
 
-.grille div{
+.grille div {
     height: 20px;
     width: 20px;
     /* background-color: red; */
 }
 
-.Brique{
+.Brique {
     background-color: #465E99;
 }
 
-.mini-grille{
+.mini-grille {
     margin-left: 50px;
     width: 80px;
     height: 80px;
@@ -25,18 +25,18 @@
     background-color: #292412;
 }
 
-.mini-grille div{
+.mini-grille div {
     height: 20px;
     width: 20px;
 }
 
-.conteneur{
+.conteneur {
     display: flex;
 }
 
-.row{
+.row {
     display: flex;
-    flex-direction: column  ;
+    flex-direction: column;
 }
 
 .cache {
@@ -45,5 +45,9 @@
 
 #boutton-start {
     margin-left: 50%;
+    background-color: rgb(28, 119, 104);
+    color: white;
+    line-height: 2;
+    border-radius: 10px;
+    padding: 0 20px;
 }
-
