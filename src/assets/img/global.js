@@ -10,9 +10,7 @@ function show_image() {
     img.width = img.width;
     img.height = img.height;
 
-    var taille = (document.body.clientHeight - img.height) * Math.random()
-
-    console.log(taille)
+    var taille = (document.body.clientHeight - img.height) * Math.random();
 
     // set the position
     img.style.position = 'absolute';

@@ -133,8 +133,6 @@ document.getElementById("prev").addEventListener("click", () => {
 });
 
 document.getElementById("next").addEventListener("click", () => {
-    console.log(currentQuestionIndex);
-    console.log(questionsData.length - 1);
     if (currentQuestionIndex < questionsData.length - 1) {
         saveAnswer();
         currentQuestionIndex++;
@@ -149,22 +147,6 @@ function saveAnswer() {
     const selectedAnswer = document.querySelector("input[name='answers']:checked");
     userAnswers[currentQuestionIndex] = selectedAnswer ? parseInt(selectedAnswer.value) : null;
 }
-
-function serialize(obj) {
-    let str = [];
-    for (let p in obj)
-        if (obj.hasOwnProperty(p)) {
-            str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
-        }
-    return str.join("&");
-}
-
-const score = {
-    "amount": obj
-}
-
-
-window.location.href = `../tetris/tetris.html?${serialize(user)}`
 
 // Vérifier les réponses et calculer le score
 function calculateScore() {

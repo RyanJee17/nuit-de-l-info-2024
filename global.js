@@ -12,8 +12,6 @@ function show_image() {
 
     var taille = (document.body.clientHeight - img.height) * Math.random()
 
-    console.log(taille)
-
     // set the position
     img.style.position = 'absolute';
     img.style.zIndex = 1;
