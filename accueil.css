@@ -23,6 +23,7 @@
     /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
+    
 }
 
 /* Modal Content/Box */
@@ -34,6 +35,7 @@
     border: 1px solid #888;
     width: 80%;
     /* Could be more or less, depending on screen size */
+    border-radius: 10px;
 }
 
 .modal-content h2 {
@@ -68,4 +70,13 @@
 .smallPicture{
     width: 100%;
     margin-right: 10%;
+}
+
+.bouton{
+    background-color: rgb(28, 119, 104);
+    color: white;
+    line-height: 2;
+    border-radius: 10px;
+    padding: 0 20px;
+    width: 150%;
 }
