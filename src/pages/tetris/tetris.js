@@ -72,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Fonctions des touches de direction
   function control(e) {
+    e.preventDefault(); // Empêche le comportement par défaut des touches
     if (e.keyCode === 37) {
       mouvementGauche();
     } else if (e.keyCode === 38) {
