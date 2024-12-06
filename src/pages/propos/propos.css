@@ -11,3 +11,15 @@
 .paragraphe {
     margin-left: 10%;
 }
+
+#logopingouin {
+	width: 75%;
+}
+
+.row {
+	display: flex;
+}
+
+.width50 {
+	width: 50%;
+}
