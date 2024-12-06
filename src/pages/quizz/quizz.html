@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../../../global.css">
+    <link rel="stylesheet" href="../../../accueil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Play:wght@400;700&display=swap"
+          rel="stylesheet">
+    <link href="quizz.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <script defer src="quiz.js"></script>
+    <header>
+        <img src="../../../src/img/header-blue-wave.svg" alt="" class="blue-wave">
+        <div class="header-content">
+            <div class="header-logos">
+                <img src="../../../src/img/ping-ouins.svg" alt="logo ping-ouins">
+                <p class="play-bold x-logos">x</p>
+                <img src="../../../src/img/race4water.png" alt="logo race-for-water" width="282px" height="46px">
+            </div>
+            <div class="navbar">
+                <a href="">
+                    <img src="../../../src/img/loupe.svg" alt="logo loupe">
+                    <p>Découvrir</p>
+                </a>
+                <a href="../../../src/pages/quizz.html">
+                    <img src="../../../src/img/bulb.svg" alt="logo ampoule">
+                    <p>Jouez</p>
+                </a>
+                <a href="../../../src/pages/propos.html">
+                    <img src="../../../src/img/info.svg" alt="logo information">
+                    <p>A propos</p>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Questions -->
+    <form>
+        <h1>Test de questions</h1>
+        <fieldset>
+            <legend>Question 1 : Choisissez une réponse</legend>
+            <div class="grid-answers">
+                <div>
+                    <input type="radio" id="rep1" name="question1" value="1">
+                    <label for="rep1">Réponse 1</label>
+                </div>
+                <div>
+                    <input type="radio" id="rep2" name="question1" value="2">
+                    <label for="rep2">Réponse 2</label>
+                </div>
+                <div>
+                    <input type="radio" id="rep3" name="question1" value="3">
+                    <label for="rep3">Réponse 3</label>
+                </div>
+                <div>
+                    <input type="radio" id="rep4" name="question1" value="4">
+                    <label for="rep4">Réponse 4</label>
+                </div>
+            </div>
+        </fieldset>
+        
+        <button type="submit">Envoyer la réponse</button>
+    </form>
+
+    <div class="navigation">
+        <button type="button" id="prev">Précédent</button>
+        <button type="button" id="next">Suivant</button>
+    </div>
+    
+    
+    <footer>
+    </footer>
+</body>
+
+</html>

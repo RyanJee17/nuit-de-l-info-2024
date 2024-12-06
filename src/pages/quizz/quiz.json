@@ -1,0 +1,8 @@
+{
+    "question":{
+        "q1": {"question":"Ou est la réponse 1", "rep1":"la réponse 2","rep2":"la réponse 3", "rep3": "la réponse 1", "rep4": "la réponse 8", "correct":3, "mp3_link_id":4}
+    },
+    "mp3":{
+        "mp3_1":{"id":1, "path":"path.mp3"}
+    }
+}
