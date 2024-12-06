@@ -40,12 +40,12 @@
 }
 
 #form {
+    font-family: 'Changa One';
     width: 50%;
     margin-right: auto;
     margin-left: auto;
 }
 
-/* Style pour le bouton submit */
 form button[type="submit"] {
     margin-top: 2%;
     width: 100%;
@@ -61,14 +61,14 @@ form button[type="submit"] {
 }
 
 form button[type="submit"]:hover {
-    background-color: #FFA000; /* Jaune plus foncé au survol */
+    background-color: #FFA000;
 }
 
 /* Conteneur des boutons de navigation */
 .navigation {
     position: relative;
     display: flex;
-    justify-content: space-between; /* Espace entre les deux boutons */
+    justify-content: space-between;
     margin-top: 2rem;
     width: 100%;
 }
@@ -88,10 +88,9 @@ form button[type="submit"]:hover {
 }
 
 .navigation button:hover {
-    background-color: #0056b3; /* Bleu plus foncé au survol */
+    background-color: #0056b3;
 }
 
-/* Positionnement spécifique pour chaque bouton */
 .navigation #prev {
     position: absolute;
     left: 0;
@@ -100,4 +99,23 @@ form button[type="submit"]:hover {
 .navigation #next {
     position: absolute;
     right: 0;
+}
+
+#play {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+#playButton {
+    width: 50%;
+    padding: 5%;
+    font-size:300%;
+    border-radius: 10px;
+    background-color: #465e99;
+    color: #9ee454;
+    font-weight: bold;
+    position:relative;
+    cursor: pointer;
 }
