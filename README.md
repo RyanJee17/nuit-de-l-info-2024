@@ -26,7 +26,7 @@ Nous avons décidé de présenter ce projet comme une application éducative à 
 
 Il vous suffit de d'ouvrir le fichier `index.html` afin d'acceder au projet et de naviguer tout simplement entre les pages.
 
-Vous pouvez vous connectez à partir de l'adresse suivante : ...
+Vous pouvez vous connectez à partir de l'adresse suivante : [https://nuit-de-l-info-2024-cyan.vercel.app/index.html](https://nuit-de-l-info-2024-cyan.vercel.app/index.html)
 
 ## Les défis
 
