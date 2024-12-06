@@ -1,0 +1,13 @@
+.section-title {
+    text-decoration: underline;
+    margin-left: 15%;
+}
+
+.colunm-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraphe {
+    margin-left: 10%;
+}

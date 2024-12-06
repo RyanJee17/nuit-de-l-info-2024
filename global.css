@@ -68,11 +68,26 @@ header {
     position: relative;
 }
 
-.navbar > a {
+.navbar>a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     color: white;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.colunm{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    
 }
