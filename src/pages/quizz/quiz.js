@@ -150,6 +150,22 @@ function saveAnswer() {
     userAnswers[currentQuestionIndex] = selectedAnswer ? parseInt(selectedAnswer.value) : null;
 }
 
+function serialize(obj) {
+    let str = [];
+    for (let p in obj)
+        if (obj.hasOwnProperty(p)) {
+            str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+        }
+    return str.join("&");
+}
+
+const score = {
+    "amount": obj
+}
+
+
+window.location.href = `../tetris/tetris.html?${serialize(user)}`
+
 // Vérifier les réponses et calculer le score
 function calculateScore() {
     let score = 0;
@@ -159,7 +175,7 @@ function calculateScore() {
 
     // Redirection ou affichage du score
     alert(`Votre score est ${score}/${questionsData.length}`);
-    window.location.href = "../"; // Redirige vers une page de résultats
+    window.location.href = "../result/result.html"; // Redirige vers une page de résultats
 }
 
 document.querySelector("form").addEventListener("submit", (event) => {
