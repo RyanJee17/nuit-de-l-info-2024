@@ -22,6 +22,12 @@ Nous avons choisi de réaliser une application divisée de la façon suivante :
 
 Nous avons décidé de présenter ce projet comme une application éducative à destination universelle. Il faut que cela parle aux plus jeunes comme au plus âgés. C'est pourquoi nous avons choisi une interface avec des couleurs simples, avec toute la charte graphique sur le thème de la mer avec des teintes et bleu et de vert.
 
+### Lancer le projet
+
+Il vous suffit de d'ouvrir le fichier `index.html` afin d'acceder au projet et de naviguer tout simplement entre les pages.
+
+Vous pouvez vous connectez à partir de l'adresse suivante : ...
+
 ## Les défis
 
 Sans compter le défi obligatoire de la nuit de l'info, nous avons choisi 5 autres défis à réaliser, que ce soir dans le but de concourrir pour les prix, ou seulement pas leurs fortes capacités d'adaptation dans notre projet :

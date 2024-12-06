@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="accueil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Play:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="play-bold">
+        <img src="./src/assets/img/header-blue-wave.svg" alt="vague bleu du haut de page" class="blue-wave">
+        <div class="header-content">
+            <div class="header-logos">
+                <img src="./src/assets/img/ping-ouins.svg" alt="logo ping-ouins">
+                <p class="x-logos">x</p>
+                <img src="./src/assets/img/race4water.png" alt="logo race-for-water" width="282" height="46">
+            </div>
+            <div class="navbar">
+                <a href="">
+                    <img src="./src/assets/img/loupe.svg" alt="logo loupe" width="40" height="40">
+                </a>
+                <a href="./src/pages/tetris/index_tetris.html">
+                    <img src="./src/assets/img/dice.png" alt="Image du bouton de jeu" width="40" height="40">
+                </a>
+                <a href="./src/pages/propos/propos.html">
+                    <img src="./src/assets/img/info.png" alt="logo information" width="40" height="40">
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="row">
+        <div class="colunm">
+            <button class="bouton" id="ButtonPeau">La peau</button>
+            <button class="bouton" id="ButtonPoumons">Les poumons</button>
+            <button class="bouton" id="ButtonReins">Les reins</button>
+        </div>
+        <img src="src/assets/img/Oceane.svg" id="picture" class="body" alt="Oceane">
+        <div class="colunm">
+            <button class="bouton" id="ButtonCirculatoire">Le système circulatoire</button>
+            <button class="bouton" id="ButtonOs">Les os</button>
+            <button class="bouton" id="ButtonFoie">Le foie</button>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="titreModal">un titre</h2>
+            <div class="row">
+                <img src="src/assets/img/Poumons-07.svg" id="imageModal" class="smallPicture" alt="Les poumons de Oceane">
+                <p id="texteModal">Texte</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="./src/assets/img/footer-blue-wave.svg" alt="vague bleu du bas de page" class="blue-wave">
+        <p class="play-bold">Ping-Ouins © - Nuit de l'informatique 2024 - Mentions légales</p>
+    </footer>
+    <script src="accueil.js"></script>
+</body>
+
+</html>
