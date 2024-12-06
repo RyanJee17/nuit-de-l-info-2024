@@ -192,6 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (ligne.every(index => carre[index]?.classList.contains('taken'))) {
         score += 10;
+        window.location.href="../result/result.html"
         AffichageScore.innerHTML = score;
         ligne.forEach(index => {
           if (carre[index]) {
