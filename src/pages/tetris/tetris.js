@@ -192,8 +192,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const ligne = [i, i + 1, i + 2, i + 3, i + 4, i + 5, i + 6, i + 7, i + 8, i + 9];
 
       if (ligne.every(index => carre[index]?.classList.contains('taken'))) {
+        window.location.href = "../quizz/quizz-intro.html";
         score += 10;
-        window.location.href="../result/result.html"
         AffichageScore.innerHTML = score;
         ligne.forEach(index => {
           if (carre[index]) {
