@@ -33,3 +33,17 @@
 .conteneur{
     display: flex;
 }
+
+.row{
+    display: flex;
+    flex-direction: column  ;
+}
+
+.cache {
+    visibility: hidden;
+}
+
+#boutton-start {
+    margin-left: 50%;
+}
+
