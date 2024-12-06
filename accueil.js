@@ -58,36 +58,6 @@ document.getElementById('ButtonReins').addEventListener('click', (e) => {
     modal.style.display = "block";
 })
 
-document.getElementById('ButtonMains').addEventListener('click', (e) => {
-    titre = document.getElementById("titreModal");
-    titre.textContent = "Les zones littorales (plages et estuaires) – Les mains et les pieds"
-
-    image = document.getElementById("imageModal");
-    image.src = ""
-    image.alt = ""
-
-    texte = document.getElementById("texteModal");
-    texte.textContent = "Les zones littorales, comme les plages, les estuaires et les mangroves, peuvent être comparées aux mains et aux pieds humains. Ces zones sont des interfaces, des points de contact entre deux mondes différents : la terre et l'eau. Elles abritent une biodiversité extraordinaire et jouent un rôle crucial dans l'absorption des nutriments, la filtration de l'eau et la protection des côtes contre l'érosion. Tout comme les mains et les pieds nous permettent d'interagir avec notre environnement et de protéger notre corps, les zones littorales servent de 'frontières' écologiques, offrant des services vitaux à la fois pour les humains et pour la faune marine."
-
-    modal = document.getElementById("modal");
-    modal.style.display = "block";
-})
-
-document.getElementById('ButtonCellules').addEventListener('click', (e) => {
-    titre = document.getElementById("titreModal");
-    titre.textContent = "Le plancton (phytoplancton et zooplancton) – Les cellules et les mitochondries"
-
-    image = document.getElementById("imageModal");
-    image.src = ""
-    image.alt = ""
-
-    texte = document.getElementById("texteModal");
-    texte.textContent = "Le plancton est à la base de la chaîne alimentaire marine, tout comme les cellules sont à la base du fonctionnement de notre corps. Le phytoplancton, qui produit de l'oxygène et de la biomasse à partir de la lumière et des nutriments, fonctionne un peu comme nos mitochondries, qui produisent l'énergie nécessaire à la cellule. De la même manière que les mitochondries sont essentielles à la production d'énergie pour le corps, le phytoplancton est essentiel pour maintenir la chaîne alimentaire et la vie marine en fournissant de l’énergie et des nutriments."
-
-    modal = document.getElementById("modal");
-    modal.style.display = "block";
-})
-
 document.getElementById('ButtonCirculatoire').addEventListener('click', (e) => {
     titre = document.getElementById("titreModal");
     titre.textContent = "Les courants marins – Le système circulatoire"
@@ -132,27 +102,3 @@ document.getElementById('ButtonFoie').addEventListener('click', (e) => {
     modal = document.getElementById("modal");
     modal.style.display = "block";
 })
-
-/*
-document.getElementById('picture').addEventListener('click', (e) => {
-    /*var cursorX = e.clientX;
-    var cursorY = e.pageY;
-    console.log(cursorX, cursorY);
-    img = document.getElementById('picture').getBoundingClientRect();
-    console.log(cursorX - img.left)
-
-    var ratioX = e.target.naturalWidth / e.target.offsetWidth;
-    var ratioY = e.target.naturalHeight / e.target.offsetHeight;
-    var imgX = Math.round(e.offsetX * ratioX);
-    var imgY = Math.round(e.offsetY * ratioY);
-
-    console.log(imgX, imgY);
-    /*if (quelque chose){
-    }
-    else if (){
-    }
-    else{
-    model();
-    }
-    
-})*/
