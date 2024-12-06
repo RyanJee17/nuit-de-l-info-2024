@@ -1,0 +1,103 @@
+/* Style de base pour la grille */
+.grid-answers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+/* Cache le bouton radio original */
+.grid-answers input[type="radio"] {
+    display: none;
+}
+
+/* Style des labels */
+.grid-answers label {
+    box-shadow: 2px 2px 2px;
+    display: block;
+    text-align: center;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    background-color: #c5e1e3;
+    color: #292412;
+    font-family: 'Play', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+/* État au survol */
+.grid-answers label:hover {
+    background-color: #698ce5;
+    color: #b5d0da;
+    box-shadow: 2px 2px 2px;
+}
+
+/* État sélectionné */
+.grid-answers input[type="radio"]:checked + label {
+    background-color: #465E99;
+    color: #fff;
+    transform: scale(1.01);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+#form {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Style pour le bouton submit */
+form button[type="submit"] {
+    margin-top: 2%;
+    width: 100%;
+    background-color: #ebcd60;
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Play', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #FFA000; /* Jaune plus foncé au survol */
+}
+
+/* Conteneur des boutons de navigation */
+.navigation {
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Espace entre les deux boutons */
+    margin-top: 2rem;
+    width: 100%;
+}
+
+/* Style commun pour les boutons de navigation */
+.navigation button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: 'Play', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 8rem;
+}
+
+.navigation button:hover {
+    background-color: #0056b3; /* Bleu plus foncé au survol */
+}
+
+/* Positionnement spécifique pour chaque bouton */
+.navigation #prev {
+    position: absolute;
+    left: 0;
+}
+
+.navigation #next {
+    position: absolute;
+    right: 0;
+}
