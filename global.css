@@ -83,12 +83,14 @@ header {
 	justify-content: space-evenly;
 	margin-left: 15%;
 	margin-right: 15%;
+	text-align: justify;
 }
 
 .colunm {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 10%;
+	text-align: justify;
 }
 
 footer {
